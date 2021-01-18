@@ -55,17 +55,17 @@
     
     import UIKit
     
-    extension LyricsSourceIconDrawing {
+//     extension LyricsSourceIconDrawing {
         
-        public static let defaultSize = CGSize(width: 48, height: 48)
+//         public static let defaultSize = CGSize(width: 48, height: 48)
         
-        public static func icon(of source: LyricsProviderSource, size: CGSize = defaultSize) -> UIImage {
-            UIGraphicsBeginImageContextWithOptions(size, false, 0)
-            source.drawingMethod?(CGRect(origin: .zero, size: size))
-            let image = UIGraphicsGetImageFromCurrentImageContext()?.withRenderingMode(.alwaysOriginal)
-            UIGraphicsEndImageContext()
-            return image ?? UIImage()
-        }
-    }
+//         public static func icon(of source: LyricsProviderSource, size: CGSize = defaultSize) -> UIImage {
+//             UIGraphicsBeginImageContextWithOptions(size, false, 0)
+//             source.drawingMethod?(CGRect(origin: .zero, size: size))
+//             let image = UIGraphicsGetImageFromCurrentImageContext()?.withRenderingMode(.alwaysOriginal)
+//             UIGraphicsEndImageContext()
+//             return image ?? UIImage()
+//         }
+//     }
 
 #endif
